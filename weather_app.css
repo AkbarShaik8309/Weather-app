@@ -1,0 +1,53 @@
+/* Importing Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Keyframes for fade-in-up animation */
+@keyframes fade-in-up {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Animation class */
+.animate-fade-in-up {
+  animation: fade-in-up 0.5s ease-out forwards;
+}
+
+/* Hover effect for search button */
+#search-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Transition for placeholder */
+#city-input::placeholder {
+  transition: opacity 0.2s ease;
+}
+
+/* Placeholder opacity on focus */
+#city-input:focus::placeholder {
+  opacity: 0.5;
+}
+
+/* Suggestions dropdown styles */
+#suggestions ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#suggestions li {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border: 1px solid #e5e7eb;
+  background-color: #fff;
+  color: #1f2937;
+}
+
+#suggestions li:hover,
+#suggestions li.bg-blue-500 {
+  background-color: #3b82f6;
+  color: #fff;
+}
